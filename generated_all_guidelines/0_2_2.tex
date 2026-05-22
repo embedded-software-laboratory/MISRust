@@ -1,0 +1,7 @@
+\paragraph{Rule 0.2.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Per the rationale, this rule is specifically relevant when providing implementations for virtual functions in \Cpp. As Rust does not have a directly comparable concept, the same reasoning as for rule 0.2.1 applies. Unused variables will give a compiler warning in any case. As a remark, the compiler directive \texttt{\#[allow(unused)]} exists in Rust, which is comparable to \texttt{[[maybe\_unused]]} in \Cpp. Usage of this directive should be addressed in future Rust guidelines. The warning is promotable to a compilation error. \\
+%no example exists

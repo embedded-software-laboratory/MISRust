@@ -1,0 +1,8 @@
+\paragraph{Rule 15.1.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rust has only explicit initialization, without implicit conversions. The closest equivalent is the \texttt{tuple struct}, but these are not affected by this rule (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 15.1.3, label=lst:15_1_3]{misra_cpp_examples/15_1_3.rs}
+

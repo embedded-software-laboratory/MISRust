@@ -1,0 +1,8 @@
+\paragraph{Rule 6.4.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} While Rust supports some form of inheritance using traits, Rust does not allow arbitrary method concealing. Traits fundamentally work by exposing all methods that they define on their implementation type. Structs can only shadow trait methods, but can never fully conceal them to consumers (see second example). Rust does not provide the possibility to have two functions with the same name and different parameter types. However, in a strict sense, the same behavior is present in Rust as it is in \Cpp, due to the way traits work in general. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.4.2, label=lst:6_4_2]{misra_cpp_examples/6_4_2.rs}
+

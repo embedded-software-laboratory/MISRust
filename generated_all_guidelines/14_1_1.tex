@@ -1,0 +1,8 @@
+\paragraph{Rule 14.1.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust allows both public and non-public members simultaniously. Therefore the rule applies, even if nuances such as static keyword and protected functions are different in Rust (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 14.1.1, label=lst:14_1_1]{misra_cpp_examples/14_1_1.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 17.8.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rust does not have overloaded functions. The rationale behind this rule is developer confusion, because overload resolution in conjunction with explicit specialization might lead to unexpected results. Rust restricts specialization, function names are still unique (see example and `Rust Reference: Generic functions p. 79/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 17.8.1, label=lst:17_8_1]{misra_cpp_examples/17_8_1.rs}
+

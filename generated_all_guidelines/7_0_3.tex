@@ -1,0 +1,7 @@
+\paragraph{Rule 7.0.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Explicit cast from char to an integer type and the reverse is possible (`Rust Reference: Type cast expressions p. 205/432'). However, the value of a char is well-defined and unicode-safe. The check can be circumvented in unsafe Rust. \\
+%no example exists

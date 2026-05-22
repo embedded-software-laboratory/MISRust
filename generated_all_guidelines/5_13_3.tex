@@ -1,0 +1,8 @@
+\paragraph{Rule 5.13.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} The rationale for the rule is to avoid confusion, as in \Cpp a leading \texttt{0} marks an octal constant. In Rust, the leading \texttt{0} is ignored. To create an octal value, the \texttt{0o} prefix is required, leaving no room for confusion. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 5.13.3, label=lst:5_13_3]{misra_cpp_examples/5_13_3.rs}
+

@@ -1,0 +1,4 @@
+[package]
+name = "lib2"
+edition = "2021"
+version = "0.0.0"

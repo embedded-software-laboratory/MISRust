@@ -1,0 +1,8 @@
+\paragraph{Rule 6.5.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rust has no notion of header files. External linkage has to be explicitly typed, see `Rust Reference: Functions p. 118/432'. Accessing the functions and objects defined with external linkage (such as \texttt{extern "C"}) is only possible within an \texttt{unsafe} context since edition 2024. However, similar behavior to headers can be achieved with Rust modules and using public visibility modifiers. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.5.1, label=lst:6_5_1]{misra_cpp_examples/6_5_1.rs}
+

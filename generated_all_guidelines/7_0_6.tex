@@ -1,0 +1,8 @@
+\paragraph{Rule 7.0.6}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Compile time assignments are checked for appropriateness, during runtime assignments with e.g. overflow will result in a panic if running in debug mode (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 7.0.6, label=lst:7_0_6]{misra_cpp_examples/7_0_6.rs}
+

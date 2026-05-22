@@ -1,0 +1,8 @@
+\paragraph{Rule 9.4.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust has no \texttt{switch} statement, the closest equivalent could be a \texttt{match} expression. The rules ensure the complex structure of a switch statement is ``well-formed''. Rust \texttt{match} statements are required to be exhaustive and have clear pattern matching syntax using logical boolean operators, removing all of the ambiguity. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 9.4.2, label=lst:9_4_2]{misra_cpp_examples/9_4_2.rs}
+

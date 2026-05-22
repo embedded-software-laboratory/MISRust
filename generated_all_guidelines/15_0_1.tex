@@ -1,0 +1,7 @@
+\paragraph{Rule 15.0.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rationale is to address vulnerabilities of ``Rule of Zero'', ``Rule of Five'', and \Cpp11 ``Rule of Three''. Rust handles these special member functions via the special traits: \texttt{Copy}, \texttt{Clone}, \texttt{Drop}. Intricacies of \Cpp implementations of special member functions are different in Rust. This rule applies in a general sense, but would require careful evaluation to apply to Rust. \\
+%no example exists

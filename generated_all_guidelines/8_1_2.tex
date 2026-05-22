@@ -1,0 +1,7 @@
+\paragraph{Rule 8.1.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rationale is to prevent dangling pointers in the lambda (in a Rust closure). Due to lifetime checks, this is not possible in Rust (see rule 8.1.1). The misleading or confusing interpretation problem is solved by Rust's choice of syntax: the \texttt{move} keyword. \\
+%no example exists

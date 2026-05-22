@@ -1,0 +1,8 @@
+\paragraph{Rule 9.6.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} In Rust, functions that do not return are indicated with the \texttt{!} type. This ensures that the function does not return to the caller. The compiler errors if a function does return instead (see example and `Rust Reference: Never type p. 277/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 9.6.4, label=lst:9_6_4]{misra_cpp_examples/9_6_4.rs}
+

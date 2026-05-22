@@ -1,0 +1,7 @@
+\paragraph{Rule 12.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rust's \texttt{union} implementation mitigates risks of dropped memory regions or implicit write operations, but this behaviour can explicitly be added to unions. Therefore the rule can be applied to Rust as well (`Rust Reference: Initialization of a Union p.95/432'). \\
+%no example exists

@@ -1,0 +1,8 @@
+\paragraph{Rule 8.19.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Sequencing of expressions uses blocks \texttt{\{\}} in Rust, the comma operator does not exist. This can be seen as less ambiguous (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.19.1, label=lst:8_19_1]{misra_cpp_examples/8_19_1.rs}
+

@@ -1,0 +1,7 @@
+\paragraph{Rule 6.2.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} The explicit typing in Rust prevents the definition of two identical types within the same translation unit (compilation unit a.k.a. crate). However, some loop holes exist. The usage of the \texttt{no\_mangle} attribute allows one to define and link against two function versions of the same name. Ultimately, the resulting run-time behavior, as in the case of C/\Cpp, depends on the linker used for the final binary. The attribute is usable within safe Rust until edition 2024. From edition 2024, the attribute is marked \texttt{unsafe}. See example 6.2.1. \\
+%no example exists

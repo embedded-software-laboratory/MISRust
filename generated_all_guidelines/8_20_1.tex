@@ -1,0 +1,8 @@
+\paragraph{Rule 8.20.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Const values are evaluated at compile time in Rust, overflows won't always cause a compilation error – but a panic at runtime. To force wrapping, explicit functions have to be used (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.20.1, label=lst:8_20_1]{misra_cpp_examples/8_20_1.rs}
+

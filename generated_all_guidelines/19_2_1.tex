@@ -1,0 +1,8 @@
+\paragraph{Rule 19.2.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rationale is to prevent confusing behaviour and unexpected redefinition due to collisions in complex include structures. Due to strict import rules and compile time checks against redefinition, the problems addressed by this rule are solved at compile time in Rust (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 19.2.1, label=lst:19_2_1]{misra_cpp_examples/19_2_1.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 0.1.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} For a general unused return value, there is no warning given. Rust's error type \texttt{Result} produces an explicit compiler warning if its returned values are unused. Rust provides a language feature for annotating custom functions as \texttt{\#[must\_use]}, requiring callers to use the return value. If not, a compiler warning is emitted. Additionally, the standard library provides \texttt{\#[must\_use]} annotations for critical functions: \url{https://std-dev-guide.rust-lang.org/policy/must-use.html}. The warnings can be promoted to a compilation error. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 0.1.2, label=lst:0_1_2]{misra_cpp_examples/0_1_2.rs}
+

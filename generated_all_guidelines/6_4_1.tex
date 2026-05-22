@@ -1,0 +1,8 @@
+\paragraph{Rule 6.4.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust allows shadowing in inner scopes (see example). However, the original rationale mentions developer confusion as the reason for the rule. Rust style guidelines advocate for variable rebinding as a form of clean code style. Additionally, global variable names are uppercase snakecase names and checked using lints. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.4.1, label=lst:6_4_1]{misra_cpp_examples/6_4_1.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 0.2.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Unused type alias produces compilation warning. Rust does not have an equivalent for an unnamed namespace, the equivalent for a namespace is a module. Unused type aliases in a named module also throw a compilation warning. The warnings are promotable to compilation errors. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 0.2.3, label=lst:0_2_3]{misra_cpp_examples/0_2_3.rs}
+

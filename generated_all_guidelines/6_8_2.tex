@@ -1,0 +1,8 @@
+\paragraph{Rule 6.8.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust requires a lifetime annotation for returned references (which can never be valid for local variables), and additionally prohibits return of references to local variables. Returning a dangling pointer is safe to do in Rust, but results in a warning. Dereferencing the pointer is unsafe and will cause UB (see example). The warning can be promoted to a compilation error. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.8.2, label=lst:6_8_2]{misra_cpp_examples/6_8_2.rs}
+

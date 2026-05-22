@@ -1,0 +1,7 @@
+\paragraph{Rule 8.2.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} In Rust, the \texttt{dyn} keyword can be used to describe trait behaviour without specifying an explicit type at compile time. Cast to a specific type (corresponding to a derived class in \Cpp) can be done with the call \texttt{downcast\_ref::\textless DerivedType\textgreater}, which corresponds to this rule's requirements; `Rust Programming Language: Defining a Trait for Common Behavior p. 462/626'. \\
+%no example exists

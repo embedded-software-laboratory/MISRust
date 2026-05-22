@@ -1,0 +1,8 @@
+\paragraph{Rule 11.6.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust enforces RAII, declaring variables requires initialization before they can be used on any control flow path (`Rust Reference: Declaration statements p. 176/432', `Rust Reference: Variables p. 375/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 11.6.1, label=lst:11_6_1]{misra_cpp_examples/11_6_1.rs}
+

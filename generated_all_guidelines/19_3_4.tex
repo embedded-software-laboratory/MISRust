@@ -1,0 +1,8 @@
+\paragraph{Rule 19.3.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} The rationale is to prevent unexpected behaviour due to textual replacement in \Cpp macros, instead of handling macro arguments like parameters to a function call. In Rust, meta-variables are used to match macro parameters, resulting in behaviour that resembles type checks. Where in \Cpp operator precedence and textual replacement might lead to unexpected behaviour, Rust matches operands as expressions (see example). Rust's mechanism adds safety for the given rationale. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 19.3.4, label=lst:19_3_4]{misra_cpp_examples/19_3_4.rs}
+

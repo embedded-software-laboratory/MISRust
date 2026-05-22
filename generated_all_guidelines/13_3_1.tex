@@ -1,0 +1,8 @@
+\paragraph{Rule 13.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rust's equivalent of virtual functions are trait implementations. Trait implementations are explicit (impl block). This eliminates the rule's rationale fo exidental overrides through Rust's language design (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 13.3.1, label=lst:13_3_1]{misra_cpp_examples/13_3_1.rs}
+

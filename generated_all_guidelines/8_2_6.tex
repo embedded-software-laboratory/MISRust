@@ -1,0 +1,7 @@
+\paragraph{Rule 8.2.6}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Cast from pointer to pointer, and pointer to address and reverse are allowed. Furthermore is this section of the reference not fully documented. This rule is still safely handled, as all pointer dereferences have to be in an \texttt{unsafe} block (`Rust Reference: Type cast expressions p. 205/432'). \\
+%no example exists

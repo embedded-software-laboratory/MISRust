@@ -1,0 +1,7 @@
+\paragraph{Rule 7.11.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust does not have the notion of raw pointers in a non-\texttt{unsafe} context, including the \texttt{nullptr} (`Rust Reference: Raw Pointers p. 289/432'). Its equivalent, \texttt{std::ptr::null}, is not of type integer, but uses generics to match its return value. \\
+%no example exists

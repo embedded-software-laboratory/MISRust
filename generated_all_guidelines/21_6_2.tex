@@ -1,0 +1,7 @@
+\paragraph{Rule 21.6.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rust's lifetime management guarantees this. When not specified, lifetime elision is used. Additionally explicit lifetime annotations are required by the compiler, where automatic elision is not possible. Variables going out of scope will call their destructor equivalent automatically (provided by the \texttt{Drop} trait implementation). A natural adaptation of this rule to Rust should include rules to address explicit \texttt{Drop} implementations by a user (`Rust Reference: Lifetime elision p. 340/432', see example for rule 21.6.4). \\
+%no example exists

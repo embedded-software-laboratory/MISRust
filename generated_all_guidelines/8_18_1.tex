@@ -1,0 +1,8 @@
+\paragraph{Rule 8.18.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} The Rust equivalent to \texttt{std::memcpy} is \texttt{std::ptr::copy}, which is semantically equivalent to \texttt{std::memmove} per documentation: \url{https://doc.rust-lang.org/std/ptr/fn.copy.html}. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.18.1, label=lst:8_18_1]{misra_cpp_examples/8_18_1.rs}
+

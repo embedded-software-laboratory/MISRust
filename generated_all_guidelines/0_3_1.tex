@@ -1,0 +1,8 @@
+\paragraph{Dir 0.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust does not provide suspicious (imprecise) use warnings. Signalling for infinities exist, but the rationale behind the directive is not satisfied. Rust supports floating-point arithmetic, but appropriate usage depends on context and application-level constraints. By default Rust uses 64-bit floating-point numerical types, which lessens the accumulation of precision errors in common use cases. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 0.3.1, label=lst:0_3_1]{misra_cpp_examples/0_3_1.rs}
+

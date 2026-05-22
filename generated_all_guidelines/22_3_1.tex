@@ -1,0 +1,8 @@
+\paragraph{Rule 22.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rationale is the runtime evaluation of \texttt{assert}, when compile time evaluation with \texttt{static\_assert} would be possible. Rust provides the \texttt{assert!} macro, that evaluates const expressions at compile time, and non-const expressions at runtime. The underlying rationale of this rule is addressed. Due to the duality of the macro, developer expectations of when the \texttt{assert} macro is evaluated might not be clear at a glance (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 22.3.1, label=lst:22_3_1]{misra_cpp_examples/22_3_1.rs}
+

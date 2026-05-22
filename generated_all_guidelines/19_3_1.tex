@@ -1,0 +1,8 @@
+\paragraph{Rule 19.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rationale for this rule is unspecified order of evaluation for these operators. Rust does not have a direct equivalent. Macro invocation in Rust expands the macro at compile time, similar to the \Cpp preprocessor, but offers unique fragment-specifiers to match a Rust syntax fragment. To satisfy this rule, Rust macros would be required to be more concise, reducing ambiguity. In the given example, an equivalent Rust macro call is shown. Due to missing language features, to receive similar functionality to the \texttt{\#} and \texttt{\#\#} operators, the example given for the macro invocation heavily relies on function calls, solving the task at runtime instead of compile time (see example, `Rust Reference: Macros p. 35/432' to `p. 42/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 19.3.1, label=lst:19_3_1]{misra_cpp_examples/19_3_1.rs}
+

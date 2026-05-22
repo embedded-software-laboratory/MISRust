@@ -1,0 +1,7 @@
+\paragraph{Dir 0.3.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Naturally applies, as there can be arbitrary preconditions for any function defined by a programmer. Rust does not enforce preconditions automatically, but the type system and traits support this via \texttt{Option}s, \texttt{Result}s and the newtype pattern: \url{https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=7a2572eed534710a62a2572d980e728a}. \\
+%no example exists

@@ -1,0 +1,8 @@
+\paragraph{Rule 8.9.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Comparison between pointers is an unsafe operation in Rust, therefore the rationale behind this rule is satisfied (`Rust Reference: Raw Pointers p. 289/432', see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.9.1, label=lst:8_9_1]{misra_cpp_examples/8_9_1.rs}
+

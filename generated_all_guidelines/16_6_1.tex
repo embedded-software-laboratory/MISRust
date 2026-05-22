@@ -1,0 +1,8 @@
+\paragraph{Rule 16.6.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} The rationale behind this rule is unexpected implicit type conversions for symmetrical member functions. For Rust, overriding a (symmetric) operator by implementing it's trait, is explicitly typed. Therefore this problem does not arise (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 16.6.1, label=lst:16_6_1]{misra_cpp_examples/16_6_1.rs}
+

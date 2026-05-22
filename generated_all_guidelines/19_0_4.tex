@@ -1,0 +1,7 @@
+\paragraph{Rule 19.0.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} The most direct equivalent to preprocessor macros in Rust are attributes. Different categories of attributes exist, that mimic \Cpp macros. A difference in method can be observed, as Rust attributes can be used to activate or deactivate code based on conditions (see example), but do not have an equivalent to \texttt{\#undef}. A complete analysis checking underlying grammars for equivalence is out of scope. The rationale behind the rule is to prevent developer confusion, and for the case of attributes in Rust, it can be confusing to see exactly how code behaves if attribute configuration is used extensively (`Rust Reference: Attributes p. 141/432'). \\
+%no example exists

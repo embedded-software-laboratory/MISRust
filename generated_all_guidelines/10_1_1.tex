@@ -1,0 +1,8 @@
+\paragraph{Rule 10.1.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust's mutability rules enforce that references are either mutable or immutable. Immutable references (\texttt{\&T}) cannot be used to modify the referenced value, instead explicit \texttt{mut} keyword is required (see example and `Rust Programming Language: Variables and Mutability p. 43/626'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 10.1.1, label=lst:10_1_1]{misra_cpp_examples/10_1_1.rs}
+

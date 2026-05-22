@@ -1,0 +1,7 @@
+\paragraph{Rule 28.6.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rationale is the \texttt{std::move} function not moving content of const objects. This specific rule is not applicable to Rust, as moved values are inaccessible at the original side in Rust (see rule 15.0.2). \\
+%no example exists

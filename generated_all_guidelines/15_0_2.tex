@@ -1,0 +1,8 @@
+\paragraph{Rule 15.0.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} In Rust, move semantics are the default behaviour for types not implementing the \texttt{Copy} trait. The \texttt{Copy} trait has an explicit application rule without ambiguity, and forces implementation of the \texttt{Clone} trait as well (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 15.0.2, label=lst:15_0_2]{misra_cpp_examples/15_0_2.rs}
+

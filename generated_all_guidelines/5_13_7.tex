@@ -1,0 +1,8 @@
+\paragraph{Rule 5.13.7}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust exposes only one String type (UTF8-encoded) in the standard library (`Rust Programming Language: What is a String? p.181/626'), as a String literal denoted as ``\texttt{..}''. Furthermore Raw string literals, Byte string literals, raw byte string literals and character literals exist (`Rust Programming Language, Table B-2 p. 608/626'), which are explicit in their type and can not be concatenated directly (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 5.13.7, label=lst:5_13_7]{misra_cpp_examples/5_13_7.rs}
+

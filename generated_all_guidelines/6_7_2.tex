@@ -1,0 +1,7 @@
+\paragraph{Rule 6.7.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rationale is uncontrolled mutability of global variables from arbitrary parts of the program, as well as unspecified initialization. See reasoning for rule 6.7.1, in Rust mutable global variables cannot be accessed without an \texttt{unsafe} block. For safe access, mutual exclusion mechanisms are enforced via the \texttt{Send} trait. However, the implementation of the \texttt{Send} trait can be done for arbitrary, custom data types within an \texttt{unsafe} context. Still, global variables can increase program complexity/unpredictability as described in the rationale. \\
+%no example exists

@@ -1,0 +1,8 @@
+\paragraph{Rule 9.2.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust syntax for explicit type conversion is unambiguous. The rationale of accidental release of resources due to unclear syntax is solved by this (see example). Resources in Rust are usually dropped by implementing the \texttt{Drop} trait. Once a locked \texttt{Mutex} is dropped, its resource is released. However, it is syntactically not possible to construct and release such a mutex while causing ambiguity. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 9.2.1, label=lst:9_2_1]{misra_cpp_examples/9_2_1.rs}
+

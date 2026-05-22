@@ -1,0 +1,8 @@
+\paragraph{Rule 8.1.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rationale is to prevent undefined behaviour, if the lambda is called after the object's lifetime ends. In Rust, lifetime checks prevent this (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.1.1, label=lst:8_1_1]{misra_cpp_examples/8_1_1.rs}
+

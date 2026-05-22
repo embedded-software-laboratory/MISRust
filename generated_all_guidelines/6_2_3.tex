@@ -1,0 +1,8 @@
+\paragraph{Rule 6.2.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Multiple definitions of the same entity always result in a compilation error. The rule allows identical definitions in seperate translation units.In Rust even this will cause a compilation error, when ambigous definitions are imported/used. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.2.3, label=lst:6_2_3]{misra_cpp_examples/6_2_3.rs}
+

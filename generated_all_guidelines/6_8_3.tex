@@ -1,0 +1,8 @@
+\paragraph{Rule 6.8.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Due to compiler checks of lifetime, assigning references without compatible lifetimes is not allowed (see example, also example and reasoning for rule 6.8.2, 6.8.1). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.8.3, label=lst:6_8_3]{misra_cpp_examples/6_8_3.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 9.6.5}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust's strong type system enforces that functions with a non-void return type must return a value on all paths. The Rust compiler checks for this at compile time, ensuring that all code paths in a function return a value of the specified type, even with abstract return types (see example and `Rust Reference: Abstract return types p. 297/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 9.6.5, label=lst:9_6_5]{misra_cpp_examples/9_6_5.rs}
+

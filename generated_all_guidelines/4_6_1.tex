@@ -1,0 +1,7 @@
+\paragraph{Rule 4.6.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} The Rust borrow checker guarantees that only one mutable reference to any memory location exists at one point in time. This naturally enforces a sequencing of accesses. However, unsafe Rust still requires manual sequence awareness by developers. See `Rust Programming Language: Mutable References, Page 92/626'. \\
+%no example exists

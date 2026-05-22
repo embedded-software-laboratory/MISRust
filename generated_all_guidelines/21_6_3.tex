@@ -1,0 +1,7 @@
+\paragraph{Rule 21.6.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rationale is that specific handling of dynamic memory leads to potential issues with alignment, object lifetimes, and user implementations of \texttt{new} or \texttt{delete} operators, all resulting in undefined behaviour. Rust does not have such specific memory management in non-unsafe code. For dynamic memory allocation in a safe context, only specific types like \texttt{Box} or \texttt{Vec} types exist (`Rust Reference: Memory allocation and lifetime p. 374/432'). See rule 21.6.2 for the \texttt{Drop} trait. \\
+%no example exists

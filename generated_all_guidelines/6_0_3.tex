@@ -1,0 +1,8 @@
+\paragraph{Rule 6.0.3}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Part of the rationale for this rule is the influence of include ordering on program behaviour. Due to strict rules of unambigous names when using crates in Rust, this rule is partly satisfied. Prevention of cluttering during lookup still requires following this rule in Rust code (see example). A potential adaptation could involve the usage of `prelude' modules that are often used within the Rust ecosystem. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.0.3, label=lst:6_0_3]{misra_cpp_examples/6_0_3.rs}
+

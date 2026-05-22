@@ -1,0 +1,8 @@
+\paragraph{Rule 15.1.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust object construction and destruction is done differently. For construction, typically an associated function (per convention named new) without self (or this) reference is used, to return a value of the type being constructed. The problem addressed by this rule does not occur. Destruction requires implementation of the Drop trait, which has no access to a dynamic trait implementation and is called automatically. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 15.1.1, label=lst:15_1_1]{misra_cpp_examples/15_1_1.rs}
+

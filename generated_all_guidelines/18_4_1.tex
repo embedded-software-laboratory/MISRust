@@ -1,0 +1,7 @@
+\paragraph{Rule 18.4.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rationale is prevention of implementation-defined termination if an exception occurs during call of a destructor. As Rust handles release of resources automatically based on lifetimes, this is not required in general. Additionally, the only way to return an error message from functions is either through the type system or a panic. There are no ``surprises''. \\
+%no example exists

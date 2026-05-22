@@ -1,0 +1,8 @@
+\paragraph{Rule 6.7.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} The rationale is possible race conditions. \texttt{mut static} variables in Rust can not be changed without an \texttt{unsafe} context. So possible Race conditions in a safe Rust context are guarded against, and the restriction on placement of static variables are not neccessary (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.7.1, label=lst:6_7_1]{misra_cpp_examples/6_7_1.rs}
+

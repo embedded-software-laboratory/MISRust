@@ -1,0 +1,8 @@
+\paragraph{Dir 15.8.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} This rule is concerned with undefined behaviour during copy and move assignments, when assigning to self. When providing user-defined implementations of Rust's \texttt{Copy} trait, the \texttt{Clone} trait is required. Furthermore, implementing the \texttt{Copy} trait is not possible for heap-allocated types (like \texttt{Box}). Here only a \texttt{Clone} trait implementation is possible. Due to Rust's move mechanics, self-assignments is not an issue (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 15.8.1, label=lst:15_8_1]{misra_cpp_examples/15_8_1.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 0.0.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust does not prevent invariant controlling expressions (see example \texttt{if}, \texttt{while}), and does generally not give a warning. Rust can emit warnings if the comparison is useless due to type limits (\url{https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=57651b13a36c6e24c90ee9051277194f}). Regarding \texttt{for}-loops: Rust does act on ranges, so there is no controlling expression. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 0.0.2, label=lst:0_0_2]{misra_cpp_examples/0_0_2.rs}
+

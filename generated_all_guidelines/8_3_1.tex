@@ -1,0 +1,8 @@
+\paragraph{Rule 8.3.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust utilizes only explicit integer promotions, due to the type system applying the \texttt{-} operator to an unsigned integer results in a compilation error (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 8.3.1, label=lst:8_3_1]{misra_cpp_examples/8_3_1.rs}
+

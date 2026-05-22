@@ -1,0 +1,8 @@
+\paragraph{Rule 18.5.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C5) Rust-specific adaptation potentially required \\
+\end{longtable}
+\textbf{Comment:} Rust has no equivalent to \texttt{noexcept} therefore there is no automatic passing of errors to calling functions. Different methods in Rust exist to propagate errors, some of which may lead to accidental omittance by the developer (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 18.5.1, label=lst:18_5_1]{misra_cpp_examples/18_5_1.rs}
+

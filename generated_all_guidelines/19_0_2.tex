@@ -1,0 +1,8 @@
+\paragraph{Rule 19.0.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Some behaviour of Rust macros is improved, e.g., strict type checks (see example) and a different syntax than function calls. Rust procedural macros generate Rust code, including function-like macros. The resulting code is type checked and compiled as if a human would have written it. The rationale of the rule does not apply (`Rust Reference: Procedural Macros p. 47/432'). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 19.0.2, label=lst:19_0_2]{misra_cpp_examples/19_0_2.rs}
+

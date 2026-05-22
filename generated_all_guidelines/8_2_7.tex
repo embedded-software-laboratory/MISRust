@@ -1,0 +1,7 @@
+\paragraph{Rule 8.2.7}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Interpreting a pointer type as integer will yield that pointer's address in Rust. Accessing a pointer has to be handled in an \texttt{unsafe} block (`Rust Reference: Type cast expressions p. 205/432'). The rationale of the rule still holds in \texttt{unsafe} context. However, such casts have to reside within \texttt{unsafe} blocks, providing developers a strong indication that they have to pay extra attention for the contained code. \\
+%no example exists

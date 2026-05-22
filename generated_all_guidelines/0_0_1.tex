@@ -1,0 +1,8 @@
+\paragraph{Rule 0.0.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust compiler checks for unreachable code, warnings will be generated. Unused \texttt{Result} types (Rust's error type) will also generate a warning, as do unused variables in general. Unused variable warnings can be promoted to compiler errors. (\url{https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html#unreachable-code}) \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 0.0.1, label=lst:0_0_1]{misra_cpp_examples/0_0_1.rs}
+

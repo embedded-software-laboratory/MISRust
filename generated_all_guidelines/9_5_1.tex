@@ -1,0 +1,8 @@
+\paragraph{Rule 9.5.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rationale for this rule is the prevention of unclear number of iterations in a for loop. Due to strict type checks and immutability of the chosen loop index variable, equivalent dangers like in legacy for statements in \Cpp are not present (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 9.5.1, label=lst:9_5_1]{misra_cpp_examples/9_5_1.rs}
+

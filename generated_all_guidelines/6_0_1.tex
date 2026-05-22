@@ -1,0 +1,8 @@
+\paragraph{Rule 6.0.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Function definitions in block scope are possible, but free functions always require a body in Rust, not just a declaration. Furthermore due to the syntax definition in Rust, no ambiguity as adressed by the rule can be forced in Rust (see example). \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.0.1, label=lst:6_0_1]{misra_cpp_examples/6_0_1.rs}
+

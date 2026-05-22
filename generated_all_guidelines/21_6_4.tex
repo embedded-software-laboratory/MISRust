@@ -1,0 +1,8 @@
+\paragraph{Rule 21.6.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rust does not allow global overwrite of deallocation logic like in \Cpp. See rule 21.6.2 for the \texttt{Drop} trait. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 21.6.4, label=lst:21_6_4]{misra_cpp_examples/21_6_4.rs}
+

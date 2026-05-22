@@ -1,0 +1,7 @@
+\paragraph{Rule 6.8.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} \Cpp distinction between methods callable on \textit{lvalue} and \textit{rvalue} objects does not directly correspond to a mechanism in Rust. The rationale of preventing dangling references is covered by lifetime checks, for member and non-member functions alike. (see rule 6.8.1). Some checks are in place for unsafe Rust: \url{https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html#dangling-pointers-from-locals}. \\
+%no example exists

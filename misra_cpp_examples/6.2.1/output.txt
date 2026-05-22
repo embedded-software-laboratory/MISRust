@@ -1,0 +1,5 @@
+$ cargo run
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `target/debug/consumer`
+Value from lib1: 24
+Value from lib2: 24

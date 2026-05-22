@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[svgnames]{xcolor}
+\usepackage{listings}
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+
+% https://tex.stackexchange.com/a/665880
+\usepackage{relsize}
+\usepackage{xspace}
+\newcommand{\Cpp}{\texorpdfstring{\mbox{C\raisebox{.35ex}{\textsmaller[2]{++}}}\xspace}{C++}}
+\begin{document}
+
+
+\lstdefinelanguage{Rust}{
+  morekeywords={
+    as, break, const, continue, crate, else, enum, extern, false, fn, for, if, impl, in, let, loop, match, mod, move, mut, pub, ref, return, self, Self, static, struct, super, trait, true, type, unsafe, use, where, while, async, await, dyn
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]{"},
+}
+
+\definecolor{forestgreen}{RGB}{34,139,34}
+\definecolor{darkorange}{RGB}{255,140,0}
+\definecolor{orangebrown}{RGB}{204, 85, 0}
+
+\lstset{
+    language=Rust,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    commentstyle=\color{forestgreen},
+    stringstyle=\color{orangebrown},
+    string=[b]",
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    breaklines=true,
+    breakatwhitespace=false,
+    escapeinside={(*@}{@*)}
+}
+
+\definecolor{errorcolor}{RGB}{192,57,43}
+\definecolor{warningcolor}{RGB}{230,126,34}
+\definecolor{infocolor}{RGB}{41,128,185}
+\definecolor{codebackground}{RGB}{248,248,248}
+
+\lstdefinestyle{rustcompilererror}{
+  backgroundcolor=\color{codebackground},
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{infocolor},
+  frame=single,
+  framesep=2pt,
+  keepspaces=true,
+  keywordstyle=\color{errorcolor}\bfseries,
+  morekeywords={error, warning, note},
+  numbers=left,
+  numbersep=5pt,
+  numberstyle=\tiny\color{gray},
+  rulecolor=\color{black},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stringstyle=\color{warningcolor},
+  tabsize=2,
+  title=\lstname
+}
+
+
+
+\definecolor{cppkeyword}{RGB}{0, 0, 255}
+\definecolor{cppcomment}{RGB}{34, 139, 34}
+\definecolor{cppstring}{RGB}{204, 85, 0}
+\definecolor{cppnumber}{RGB}{128, 0, 128}
+\definecolor{cppbackground}{RGB}{248, 248, 248}
+
+\lstdefinestyle{cppstyle}{
+  language=C++,
+  backgroundcolor=\color{cppbackground},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{cppkeyword}\bfseries,
+  commentstyle=\color{cppcomment},
+  stringstyle=\color{cppstring},
+  numberstyle=\tiny\color{gray},
+  identifierstyle=\color{black},
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  tabsize=4,
+  breaklines=true,
+  breakatwhitespace=false,
+  captionpos=b,
+  frame=single,
+  framesep=2pt,
+  rulecolor=\color{black},
+  morekeywords={constexpr, nullptr, noexcept, static_assert, thread_local, int32_t}
+}
+
+\definecolor{rustkeyword}{RGB}{0, 0, 255}
+\definecolor{rustcomment}{RGB}{34, 139, 34}
+\definecolor{ruststring}{RGB}{204, 85, 0}
+\definecolor{rustnumber}{RGB}{128, 0, 128}
+\definecolor{rustbackground}{RGB}{248, 248, 248}
+\definecolor{RedTypename}{RGB}{182,86,17}
+
+\definecolor{rustlifetime}{RGB}{255, 0, 0}
+\lstdefinestyle{ruststyle}{
+  language=Rust,
+  backgroundcolor=\color{rustbackground},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{rustkeyword}\bfseries,
+  commentstyle=\color{rustcomment},
+  stringstyle=\color{ruststring},
+  numberstyle=\tiny\color{gray},
+  identifierstyle=\color{black},
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  tabsize=4,
+  breaklines=true,
+  breakatwhitespace=false,
+  captionpos=b,
+  frame=single,
+  framesep=2pt,
+  rulecolor=\color{black},
+  ndkeywords={
+    bool,u8,u16,u32,u64,u128,i8,i16,i32,i64,i128,char,str,
+    Self,Option,Some,None,Result,Ok,Err,String,Box,Vec,Rc,Arc,Cell,RefCell,HashMap,BTreeMap,
+    macro_rules
+},
+ndkeywordstyle=\color{RedTypename},
+  morekeywords={as, break, const, continue, crate, else, enum, extern, false, fn, for, if, impl, in, let, loop, match, mod, move, mut, pub, ref, return, self, Self, static, struct, super, trait, true, type, unsafe, use, where, while, async, await, dyn},
+  }
+
+\include{all_guidelines_blob}
+\end{document}

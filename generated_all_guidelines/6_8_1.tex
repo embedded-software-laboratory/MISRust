@@ -1,0 +1,8 @@
+\paragraph{Rule 6.8.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C4) Rule still required (unsafe Rust) \\
+\end{longtable}
+\textbf{Comment:} Rust's strong lifetime checks prevent an access after end of life. Any references require lifetime annotations, unless lifetime elision is possible. In that way the compiler can verify that objects are not accessed after their lifetime ends (see `Rust Reference: Lifetime bounds p. 323/432', `Lifetime elision p. 339/432', `Rust Programming Language: Validating References with Lifetimes p. 243/626ff'). \texttt{unsafe} blocks do not bypass lifetime checks, but they do allow for raw pointer operations, resulting in a necessary application of this rule in unsafe Rust. See example. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 6.8.1, label=lst:6_8_1]{misra_cpp_examples/6_8_1.rs}
+

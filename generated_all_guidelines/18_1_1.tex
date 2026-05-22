@@ -1,0 +1,7 @@
+\paragraph{Rule 18.1.1}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C2) Not applicable: C++ Feature does not exist in Rust \\
+\end{longtable}
+\textbf{Comment:} Rust does not have an exception model like \Cpp. Instead errors are categorized in recoverable and unrecoverable errors. For Rust, the special type \texttt{Result} exists, to catch expected runtime errors. Unexpected runtime errors will be caught by a panic handler. \texttt{Result}s can have arbitrary types, including referenced memory. Due to borrow checks, this rule might possibly not apply, but in general the error handling is different (`Rust Programming Language: Error handling p. 196/626'). \\
+%no example exists

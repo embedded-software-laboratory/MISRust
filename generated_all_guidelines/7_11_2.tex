@@ -1,0 +1,8 @@
+\paragraph{Rule 7.11.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} An array is a fixed-size sequence in Rust, passing as a reference is possible. In contrast to \Cpp, the reference is a \textit{slice} type, not a raw pointer, and bounds are still checked during compilation and runtime `Rust Reference: Array types, Slice types p. 279/432ff' (see example). Arrays passed over FFI boundaries are out of scope. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 7.11.2, label=lst:7_11_2]{misra_cpp_examples/7_11_2.rs}
+

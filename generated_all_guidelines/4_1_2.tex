@@ -1,0 +1,8 @@
+\paragraph{Rule 4.1.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C6) Rule still required (safe Rust) \\
+\end{longtable}
+\textbf{Comment:} This rule naturally applies to the Rust programming language. Details in the rationale refer to specific \Cpp standards to identify deprecated features. Deprecated is already defined in rust: \url{https://rust-lang.github.io/rfcs/1270-deprecation.html}. The attribute emits a compilation warning by default, which can be promoted to a compilation error. See example. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 4.1.2, label=lst:4_1_2]{misra_cpp_examples/4_1_2.rs}
+

@@ -1,0 +1,8 @@
+\paragraph{Rule 5.13.2}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust does not support octal escape sequences inside of string literals. Rust enforces termination, as can be seen in the example. For hexadecimal escape sequences in Rust, the lexer only accepts the literal in pairs of two. Therefore, the rationale does not apply anymore. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 5.13.2, label=lst:5_13_2]{misra_cpp_examples/5_13_2.rs}
+

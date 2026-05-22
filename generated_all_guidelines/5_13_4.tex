@@ -1,0 +1,8 @@
+\paragraph{Rule 5.13.4}
+\begin{longtable}{p{13cm}}
+\textbf{Analysis Result} \\
+(C3) Rule can be dropped completely \\
+\end{longtable}
+\textbf{Comment:} Rust supports explicit suffixing of unsigned integer literals to specify their type. Common suffixes include \texttt{u8}, \texttt{u16}, \texttt{u32}, \texttt{u64}, \texttt{u128}, and \texttt{usize}. However, Rust does not have automatic integer promotion and its type system is platform-consistent. The rationale of this rule does not apply anymore. \\
+\lstinputlisting[style=ruststyle, caption=Rust Code Example for guideline 5.13.4, label=lst:5_13_4]{misra_cpp_examples/5_13_4.rs}
+
